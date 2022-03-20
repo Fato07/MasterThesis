@@ -2,6 +2,10 @@ const crypto = require('crypto');
 const bcrypt = require('bcrypt');
 const moment = require('moment');
 
+function copy(input_data) {
+    return JSON.parse(JSON.stringify(input_data));
+}
+
 function get_secure_random_string(bytes_length) {
     const validChars = 'abcdefghijklmnopqrstuvwxyz0123456789';
     let array = crypto.randomBytes(bytes_length);
