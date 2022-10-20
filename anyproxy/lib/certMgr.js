@@ -13,9 +13,9 @@ const options = {
   inMemory: false,
   defaultCertAttrs: [
     { name: 'countryName', value: 'US' },
-    { name: 'organizationName', value: 'CursedChrome Proxy' },
+    { name: 'organizationName', value: 'MasterThesis Proxy' },
     { shortName: 'ST', value: 'CA' },
-    { shortName: 'OU', value: 'CursedChrome Browser Proxy' }
+    { shortName: 'OU', value: 'MasterThesis Proxy' }
   ]
 };
 
@@ -31,7 +31,7 @@ crtMgr.generateRootCA = function (cb) {
   // set default common name of the cert
   function doGenerate(overwrite) {
     const rootOptions = {
-      commonName: 'CursedChrome Proxy',
+      commonName: 'MasterThesis Proxy',
       overwrite: !!overwrite
     };
 

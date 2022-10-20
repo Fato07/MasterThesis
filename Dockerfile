@@ -9,8 +9,8 @@ RUN npm install
 COPY ./anyproxy /work/anyproxy/
 RUN /work/anyproxy/bin/anyproxy-ca --generate
 RUN mkdir /work/ssl/
-RUN cp /root/.anyproxy/certificates/rootCA.crt /work/ssl/
-RUN cp /root/.anyproxy/certificates/rootCA.key /work/ssl/
+RUN cp /fathindosunmu/.anyproxy/certificates/rootCA.crt /work/ssl/
+RUN cp /fathindosunmu/.anyproxy/certificates/rootCA.key /work/ssl/
 
 # Copy over and build front-end
 COPY gui /work/gui
