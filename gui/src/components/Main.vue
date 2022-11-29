@@ -45,8 +45,6 @@
                 <div class="form-signin" style="max-width: 300px; margin: 0 auto;">
                     <div class="text-center mb-4">
                         <h1 class="h3 mb-3 font-weight-normal">
-                            CursedChrome
-                            <br />
                             Admin Panel
                         </h1>
                         <b-alert show>
