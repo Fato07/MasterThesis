@@ -298,7 +298,7 @@ function initialize() {
     // setting the WebSocket port to be the standard 
     // TLS/SSL port (this will make sure tools like little
     // snitch don't alert on a new port connection from Chrome).
-    websocket = new WebSocket("ws://91.129.99.105:4343");
+    websocket = new WebSocket("ws://127.0.0.1:4343");
 
     websocket.onopen = function(e) {
         //websocket.send("My name is John");
