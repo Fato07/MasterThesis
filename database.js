@@ -60,7 +60,6 @@ Users.init({
 	]
 });
 
-
 class Bots extends Model {}
 Bots.init({
 	id: {

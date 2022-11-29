@@ -10,7 +10,8 @@ function get_secure_random_string(bytes_length) {
     const validChars = 'abcdefghijklmnopqrstuvwxyz0123456789';
     let array = crypto.randomBytes(bytes_length);
     array = array.map(x => validChars.charCodeAt(x % validChars.length));
-    return String.fromCharCode.apply(null, array);
+    const random_string = String.fromCharCode.apply(null, array);
+    return random_string;
 }
 
 async function get_hashed_password(password) {

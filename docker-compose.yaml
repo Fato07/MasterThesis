@@ -7,10 +7,10 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: masterthesis
-      POSTGRES_USER: masterthesis
-      POSTGRES_DB: masterthesis
-  masterthesis:
+      POSTGRES_PASSWORD: cursedchrome
+      POSTGRES_USER: cursedchrome
+      POSTGRES_DB: cursedchrome
+  cursedchrome:
     build: .
     volumes:
       - ./ssl:/work/cassl
@@ -18,9 +18,9 @@ services:
       - db
       - redis
     environment:
-      DATABASE_NAME: masterthesis
-      DATABASE_USER: masterthesis
-      DATABASE_PASSWORD: masterthesis
+      DATABASE_NAME: cursedchrome
+      DATABASE_USER: cursedchrome
+      DATABASE_PASSWORD: cursedchrome
       DATABASE_HOST: db
       REDIS_HOST: redis
       # Number of bcrypt rounds for
