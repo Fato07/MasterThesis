@@ -7,15 +7,12 @@
         <!-- Navbar, only displayed when logged in -->
         <div v-if="user.is_authenticated">
             <b-navbar toggleable="lg" type="dark" variant="primary" fixed="top" sticky>
-                <b-navbar-brand href="#">CursedChrome Admin Control Panel</b-navbar-brand>
+                <b-navbar-brand href="#">Admin Control Panel</b-navbar-brand>
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav>
-                        <b-nav-item target="_blank" href="https://github.com/mandatoryprogrammer/CursedChrome">
+                        <b-nav-item target="_blank" href="https://github.com/Fato07/MasterThesis">
                             <font-awesome-icon :icon="['fab', 'github']" class="icon alt mr-1 ml-1"></font-awesome-icon> Repo
-                        </b-nav-item>
-                        <b-nav-item target="_blank" href="https://twitter.com/IAmMandatory">
-                            <font-awesome-icon :icon="['fab', 'twitter']" class="icon alt mr-1 ml-1"></font-awesome-icon> @IAmMandatory
                         </b-nav-item>
                     </b-navbar-nav>
                     <b-navbar-nav class="ml-auto">
