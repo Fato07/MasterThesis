@@ -292,7 +292,7 @@ function initialize() {
     // the host details you're using are.
     // ** Ideal setup is the following **
     // Have Nginx doing a reverse-proxy (proxy_pass) to
-    // the CursedChrome server with a HTTPS cert setup. 
+    // the server with a HTTPS cert setup. 
     // For SSL/TLS WebSockets, instead of https:// you need
     // to use wss:// as the protocol. For maximum stealth,
     // setting the WebSocket port to be the standard 

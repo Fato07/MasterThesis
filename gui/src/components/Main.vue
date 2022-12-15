@@ -69,7 +69,7 @@
             <div v-if="user.is_authenticated">
                 <!-- Bots panel -->
                 <b-card-group deck>
-                    <b-card border-variant="primary" header="CursedChrome Bots" header-bg-variant="primary" header-text-variant="white" align="center">
+                    <b-card border-variant="primary" header="Bots" header-bg-variant="primary" header-text-variant="white" align="center">
                         <b-card-text>
                             <h1>Connected Browser Bot(s)</h1>
                             <table class="table table-striped">

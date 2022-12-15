@@ -325,7 +325,7 @@ const options = {
                             'Content-Type': 'text/plain',
                             'X-Frame-Options': 'DENY'
                         },
-                        body: (new Buffer(`CursedChrome encountered an error while requesting the page.`))
+                        body: (new Buffer(`Encountered an error while requesting the page.`))
                     }
                 };
             }
@@ -566,17 +566,17 @@ async function initialize() {
     });
 
     wss.on('ready', () => {
-        logit(`CursedChrome WebSocket server is now running on port ${WS_PORT}.`)
+        logit(`WebSocket server is now running on port ${WS_PORT}.`)
     });
 
     proxyServer = new AnyProxy.ProxyServer(options);
 
     proxyServer.on('ready', () => {
-        logit(`CursedChrome HTTP Proxy server is now running on port ${PROXY_PORT}.`)
+        logit(`HTTP Proxy server is now running on port ${PROXY_PORT}.`)
     });
 
     proxyServer.on('error', (e) => {
-        logit(`CursedChrome HTTP Proxy server encountered an unexpected error:`);
+        logit(`HTTP Proxy server encountered an unexpected error:`);
         console.error(e);
     });
 
@@ -595,7 +595,7 @@ async function initialize() {
     const api_server = await get_api_server(proxy_utils);
 
     api_server.listen(API_SERVER_PORT, () => {
-        logit(`CursedChrome API server is now listening on port ${API_SERVER_PORT}`);
+        logit(`API server is now listening on port ${API_SERVER_PORT}`);
     });
 }
 

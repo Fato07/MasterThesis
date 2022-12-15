@@ -13,9 +13,9 @@ const options = {
   inMemory: false,
   defaultCertAttrs: [
     { name: 'countryName', value: 'US' },
-    { name: 'organizationName', value: 'CursedChrome Proxy' },
+    { name: 'organizationName', value: 'MasterThesis Proxy' },
     { shortName: 'ST', value: 'CA' },
-    { shortName: 'OU', value: 'CursedChrome Browser Proxy' }
+    { shortName: 'OU', value: 'MasterThesis Browser Proxy' }
   ]
 };
 
